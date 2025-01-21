@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <ul class="nav-list">
+            <li><a href="index.html">All Categories</a></li>
+            <li><a href="deals.html">Deals of the Day</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="customer-service.html">Customer Service</a></li>
+            <li><a href="best-sellers.html">Best Sellers</a></li>
+            <li><a href="buy-again.html">Buy Again</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="gift-cards.html">Gift Cards</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search" placeholder="Search for products, brands, and more">
+            <button class="btn btn-sm"><img src="https://img.icons8.com/?size=100&id=7695&format=png&color=000000" alt="Search Icon" width="12px" height="12px"></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to Our E-Commerce Store</h2>
+        <p>Find the best products at unbeatable prices!</p>
+        <a href="#" class="cta">Shop Now</a>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <button class="scroll-btn left-btn" id="scrollLeftBtn" aria-label="Scroll Left">&larr;</button>
+        <div class="scroll-container" id="scrollContainer">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51BV4vFUFpL._AC_UF1000,1000_QL80_.jpg" alt="Product 1" width="222px" height="200px">
+                <h3>Laptops</h3>
+                <p>Price: $50.00</p>
+                <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shirt/w/q/c/xl-isuel-105-varun-clothes-original-imagxat7ffqwtcy6.jpeg?q=90&crop=false" alt="Product 2" width="222px" height="200px">
+                <h3>Man Clothes</h3>
+                <p>Price: $30.00</p>
+                <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.pixabay.com/photo/2017/04/23/16/20/online-shopping-for-women-2254226_1280.jpg" alt="Product 3" width="220px" height="200px">
+                <h3>Woman clothes</h3>
+                <p>Price: $40.00</p>
+                <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/41VlXjGU69L._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 4" width="220px" height="200px">
+                <h3>Keyboard Skin cover</h3>
+                <p>Price: $25.00</p>
+                <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="data:image/jpeg;base64,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" alt="Product 5" width="220px" height="200px">
+                <h3>Pendrives</h3>
+                <p>Price: $60.00</p>
+                <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/217ypnJBNsL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 6" width="220px" height="200px">
+                <h3>Mouse</h3>
+                <p>Price: $35.00</p>
+                <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/4154nCPCBaL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 7" width="220px" height="200px">
+                <h3>Laptop bag</h3>
+                <p>Price: $20.00</p>
+                <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71+uQa+juzL._SY741_.jpg" alt="Product 8" width="220px" height="200px">
+                <h3>Hoodies</h3>
+                <p>Price: $45.00</p>
+                <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/31Wen6gm2JL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 9" width="220px" height="200px">
+                <h3>Earbars</h3>
+                <p>Price: $55.00</p>
+                <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.economictimes.com/thumb/height-450,width-600,imgsize-43084,msid-113094695/mobiles.jpg" alt="Product 10" width="220px" height="200px">
+                <h3>Mobiles</h3>
+                <p>Price: $70.00</p>
+                <button class="btn btn-add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <button class="scroll-btn right-btn" id="scrollRightBtn" aria-label="Scroll Right">&rarr;</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Contact us: <a href="mailto:ecommerceofficial.com">ecommerceofficial.com</a></p>
+            <p>
+                Follow us: 
+                <a href="https://facebook.com">Facebook</a> | 
+                <a href="https://twitter.com">Twitter</a> | 
+                <a href="https://instagram.com">Instagram</a>
+            </p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+            <p>&copy; 2025 E-Commerce Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Include the script file -->
+    <script src="script.js"></script>
+</body>
+</html>
